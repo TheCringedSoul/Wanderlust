@@ -15,6 +15,10 @@ const LeftSidebar = () => {
 
   return (
     <section className='custom-scrollbar leftsidebar'>
+      <Link href='/' className='flex pl-4 pb-20 items-center gap-4'>
+        <Image src='/logo.png' alt='logo' width={28} height={28} />
+        <p className='text-heading3-bold text-light-1 max-xs:hidden'>Wanderlust</p>
+      </Link>
       <div className='flex w-full flex-1 flex-col gap-6 px-6'>
         {sidebarLinks.map((link) => {
           const isActive =

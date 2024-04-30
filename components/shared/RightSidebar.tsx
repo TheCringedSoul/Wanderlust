@@ -1,5 +1,6 @@
 import { currentUser } from "@clerk/nextjs";
-
+import { dark } from "@clerk/themes";
+import { OrganizationSwitcher } from "@clerk/nextjs";
 import UserCard from "../cards/UserCard";
 
 import { fetchCommunities } from "@/lib/actions/community.actions";
@@ -18,6 +19,14 @@ async function RightSidebar() {
 
   return (
     <section className='custom-scrollbar rightsidebar'>
+      <div className="flex items-center justify-center"><OrganizationSwitcher
+          appearance={{
+            baseTheme: dark,
+            elements: {
+              organizationSwitcherTrigger: "py-2 px-4",
+            },
+          }}
+        /></div>
       <div className='flex flex-1 flex-col justify-start'>
         <h3 className='text-heading4-medium text-light-1'>
           Suggested Communities
