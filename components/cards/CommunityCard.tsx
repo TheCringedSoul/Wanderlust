@@ -16,7 +16,7 @@ interface Props {
 
 function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
   return (
-    <article className='community-card'>
+    <article className='community-card bg-black'>
       <div className='flex flex-wrap items-center gap-3'>
         <Link href={`/communities/${id}`} className='relative h-12 w-12'>
           <Image
@@ -29,21 +29,24 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
 
         <div>
           <Link href={`/communities/${id}`}>
-            <h4 className='text-base-semibold text-light-1'>{name}</h4>
+            <h4 className='text-base-semibold text-white'>{name}</h4>
           </Link>
-          <p className='text-small-medium text-gray-1'>@{username}</p>
+          <p className='text-small-regular text-gray-1'>@{username}</p>
         </div>
-      </div>
-
-      <p className='mt-4 text-subtle-medium text-gray-1'>{bio}</p>
-
-      <div className='mt-5 flex flex-wrap items-center justify-between gap-3'>
-        <Link href={`/communities/${id}`}>
-          <Button size='sm' className='community-card_btn'>
+         <Link href={`/communities/${id}`}>
+          <Button size='sm' className=' ml-40 font-light'>
             View
           </Button>
         </Link>
+      </div>
 
+      <div className=' mt-12 flex flex-wrap items-center justify-between gap-3'>
+       
+        <Link href={`/communities/${id}`}>
+          <Button size='sm' className=' font-light bg-red-500'>
+            Send Invite
+          </Button>
+        </Link>
         {members.length > 0 && (
           <div className='flex items-center'>
             {members.map((member, index) => (

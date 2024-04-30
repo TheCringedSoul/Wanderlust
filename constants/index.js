@@ -33,8 +33,12 @@ export const sidebarLinks = [
     imgURL: "/assets/edit.svg",
     route: "https://gentle-river-061a59910.5.azurestaticapps.net/",
     label: "Itinerary Planner",
+  },
+  {
+    imgURL: "/assets/tag.svg",
+    route: "http://localhost:3002/",
+    label: "MapBox",
   }
-  
 ];
 
 export const profileTabs = [

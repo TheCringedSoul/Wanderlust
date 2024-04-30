@@ -51,11 +51,11 @@
   }
 
   .searchbar {
-    @apply flex gap-1 rounded-lg bg-dark-3 px-4 py-2;
+    @apply flex gap-1 rounded-lg bg-black px-4 py-2;
   }
 
   .searchbar_input {
-    @apply border-none bg-dark-3 text-base-regular  outline-none !important;
+    @apply border-none bg-black text-base-regular  outline-none !important;
   }
 
   .topbar {
@@ -75,7 +75,7 @@
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden;
+    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5  pt-20 max-md:hidden;
   }
 
   .leftsidebar_link {
