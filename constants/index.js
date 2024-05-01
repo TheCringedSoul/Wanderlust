@@ -36,7 +36,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/assets/tag.svg",
-    route: "http://localhost:3002/",
+    route: "http://localhost:3000/",
     label: "MapBox",
   }
 ];
