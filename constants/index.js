@@ -31,7 +31,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/assets/edit.svg",
-    route: "https://gentle-river-061a59910.5.azurestaticapps.net/",
+    route: "http://localhost:3001/",
     label: "Itinerary Planner",
   },
   {
