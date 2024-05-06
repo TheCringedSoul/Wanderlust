@@ -28,16 +28,16 @@ export const sidebarLinks = [
     imgURL: "/assets/user.svg",
     route: "/profile",
     label: "Profile",
-  },
-  {
-    imgURL: "/assets/edit.svg",
-    route: "http://localhost:3001/",
-    label: "Itinerary Planner",
-  },
-  {
-    imgURL: "/assets/tag.svg",
-    route: "http://localhost:3000/",
-    label: "MapBox",
+  // },
+  // {
+  //   imgURL: "/assets/edit.svg",
+  //   route: "http://localhost:3001/",
+  //   label: "Itinerary Planner",
+  // },
+  // {
+  //   imgURL: "/assets/tag.svg",
+  //   route: "http://localhost:3000/",
+  //   label: "MapBox",
   }
 ];
 
