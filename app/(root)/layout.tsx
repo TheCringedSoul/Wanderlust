@@ -13,8 +13,8 @@ import Topbar from "@/components/shared/Topbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TagTalk",
-  description: "TagTalk it is",
+  title: "Wanderlust",
+  description: "Wanderlust it is",
 };
 
 export default function RootLayout({
